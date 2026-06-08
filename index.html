@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portal Oficial del H. Ayuntamiento de Chontla, Veracruz. Servicios, trámites, transparencia y gobierno municipal." />
+  <title>H. Ayuntamiento de Chontla | Gobierno Municipal</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    /* Estilos inline complementarios */
+    .site-header.compact { padding: 8px 0; }
+    .site-header.compact .escudo { width: 48px; height: 48px; font-size: 22px; }
+    .site-header.compact .brand-text h1 { font-size: 14px; }
+    .site-header.compact .brand-text p { display: none; }
+    .site-header { transition: padding .3s ease; }
+    .nav-toggle { line-height: 1; }
+
+    /* Efecto bandera México - borde tricolor en header */
+    .header-flag-bar {
+      height: 4px;
+      background: linear-gradient(to right, #006847 33.33%, #FFFFFF 33.33%, #FFFFFF 66.66%, #CC0000 66.66%);
+    }
+  </style>
+</head>
+<body>
+
+<!-- Barra tricolor México -->
+<div class="header-flag-bar"></div>
+
+<!-- Alerta importante -->
+<div class="alerta-bar">
+  <i class="fas fa-bullhorn"></i>
+  <span>Convocatoria abierta: Cabildo Abierto 2025 — <a href="#">Más información</a></span>
+  <button class="alerta-close" style="background:none;border:none;cursor:pointer;margin-left:12px;font-size:14px;">✕</button>
+</div>
+
+<!-- Barra superior -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left">
+      <span><i class="fas fa-map-marker-alt" style="margin-right:4px"></i> Chontla, Veracruz</span>
+      <div class="divider"></div>
+      <span><i class="fas fa-calendar-alt" style="margin-right:4px"></i>
+        <script>document.write(new Date().toLocaleDateString('es-MX',{weekday:'long',year:'numeric',month:'long',day:'numeric'}))</script>
+      </span>
+      <div class="divider"></div>
+      <a href="tel:7891234567"><i class="fas fa-phone" style="margin-right:4px"></i> (789) 123-4567</a>
+    </div>
+    <div class="topbar-right">
+      <a href="#" title="Facebook" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" title="Twitter" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+      <a href="#" title="YouTube" class="social-icon"><i class="fab fa-youtube"></i></a>
+      <a href="#" title="Instagram" class="social-icon"><i class="fab fa-instagram"></i></a>
+      <div class="divider"></div>
+      <a href="https://edomex.gob.mx" target="_blank" rel="noopener" style="font-weight:600;">
+        <i class="fas fa-external-link-alt" style="margin-right:4px"></i>Gob. Veracruz
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Header principal -->
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <div class="header-brand">
+        <div class="escudo">
+          <i class="fas fa-shield-halved" style="color:#fff"></i>
+        </div>
+        <div class="brand-text">
+          <h1>H. Ayuntamiento de Chontla</h1>
+          <p>2022 – 2025 &nbsp;|&nbsp; Administración Municipal</p>
+          <span class="estado"><i class="fas fa-map-marker-alt" style="margin-right:3px"></i>Veracruz, México</span>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button class="btn-buscar" id="btn-search">
+          <i class="fas fa-search"></i> Buscar
+        </button>
+        <a href="tramites.html" class="btn-tramites">
+          <i class="fas fa-file-alt"></i> Trámites en Línea
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Navegación principal -->
+<nav class="navbar" role="navigation" aria-label="Menú principal">
+  <div class="container">
+    <div class="navbar-inner">
+
+      <!-- Inicio -->
+      <div class="nav-item">
+        <a href="index.html" class="nav-link active">
+          <i class="fas fa-home" style="font-size:12px"></i> Inicio
+        </a>
+      </div>
+
+      <!-- Acerca del Municipio -->
+      <div class="nav-item">
+        <a href="#" class="nav-link">
+          Municipio <i class="fas fa-chevron-down arrow"></i>
+        </a>
+        <div class="dropdown">
+          <a href="historia.html"><span class="icon"><i class="fas fa-landmark"></i></span> Historia del Municipio</a>
+          <a href="mision-vision.html"><span class="icon"><i class="fas fa-bullseye"></i></span> Misión y Visión</a>
+          <a href="organigrama.html"><span class="icon"><i class="fas fa-sitemap"></i></span> Organigrama Municipal</a>
+          <a href="cabildo.html"><span class="icon"><i class="fas fa-users"></i></span> H. Cabildo</a>
+          <a href="plan-desarrollo.html"><span class="icon"><i class="fas fa-clipboard-list"></i></span> Plan de Desarrollo Municipal</a>
+          <a href="reglamentos.html"><span class="icon"><i class="fas fa-book"></i></span> Reglamentos Municipales</a>
+        </div>
+      </div>
+
+      <!-- TRANSPARENCIA (Mega Menú) -->
+      <div class="nav-item">
+        <a href="transparencia.html" class="nav-link">
+          Transparencia <i class="fas fa-chevron-down arrow"></i>
+        </a>
+        <div class="mega-dropdown">
+          <!-- Columna 1: Art. 92 -->
+          <div class="mega-col">
+            <h4><i class="fas fa-file-contract" style="margin-right:5px"></i>Art. 92 LGTAIP</h4>
+            <a href="transparencia/estructura.html"><span class="icon"><i class="fas fa-sitemap"></i></span> Estructura Orgánica</a>
+            <a href="transparencia/facultades.html"><span class="icon"><i class="fas fa-gavel"></i></span> Facultades y Funciones</a>
+            <a href="transparencia/marco-normativo.html"><span class="icon"><i class="fas fa-book-open"></i></span> Marco Normativo</a>
+            <a href="transparencia/presupuesto.html"><span class="icon"><i class="fas fa-dollar-sign"></i></span> Presupuesto Asignado</a>
+            <a href="transparencia/directorio.html"><span class="icon"><i class="fas fa-address-book"></i></span> Directorio de Servidores</a>
+            <a href="transparencia/remuneraciones.html"><span class="icon"><i class="fas fa-money-bill-wave"></i></span> Remuneraciones</a>
+            <a href="transparencia/contrataciones.html"><span class="icon"><i class="fas fa-handshake"></i></span> Contrataciones y Compras</a>
+          </div>
+          <!-- Columna 2: Finanzas -->
+          <div class="mega-col">
+            <h4><i class="fas fa-chart-bar" style="margin-right:5px"></i>Finanzas Públicas</h4>
+            <a href="transparencia/cuenta-publica.html"><span class="icon"><i class="fas fa-file-invoice-dollar"></i></span> Cuenta Pública</a>
+            <a href="transparencia/nomina.html"><span class="icon"><i class="fas fa-users"></i></span> Nómina de Personal</a>
+            <a href="transparencia/ingresos.html"><span class="icon"><i class="fas fa-arrow-down"></i></span> Ingresos Municipales</a>
+            <a href="transparencia/egresos.html"><span class="icon"><i class="fas fa-arrow-up"></i></span> Egresos Municipales</a>
+            <a href="transparencia/deuda.html"><span class="icon"><i class="fas fa-balance-scale"></i></span> Deuda Pública</a>
+            <a href="transparencia/auditoria.html"><span class="icon"><i class="fas fa-search-dollar"></i></span> Auditorías y Fiscalización</a>
+          </div>
+          <!-- Columna 3: Obra & Acceso -->
+          <div class="mega-col">
+            <h4><i class="fas fa-hard-hat" style="margin-right:5px"></i>Obra y Acceso</h4>
+            <a href="transparencia/licitaciones.html"><span class="icon"><i class="fas fa-clipboard-check"></i></span> Licitaciones Públicas</a>
+            <a href="transparencia/obra-publica.html"><span class="icon"><i class="fas fa-hammer"></i></span> Obra Pública</a>
+            <a href="transparencia/convenios.html"><span class="icon"><i class="fas fa-file-signature"></i></span> Convenios y Contratos</a>
+            <a href="transparencia/declaraciones.html"><span class="icon"><i class="fas fa-id-card"></i></span> Declaración Patrimonial</a>
+            <a href="transparencia/pdp.html"><span class="icon"><i class="fas fa-shield-alt"></i></span> Protección de Datos</a>
+            <a href="transparencia/solicitudes.html"><span class="icon"><i class="fas fa-envelope-open-text"></i></span> Solicitudes de Info.</a>
+            <a href="transparencia/infomex.html"><span class="icon"><i class="fas fa-laptop"></i></span> Portal INFOMEX</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Obra Pública -->
+      <div class="nav-item">
+        <a href="#" class="nav-link">
+          Obra Pública <i class="fas fa-chevron-down arrow"></i>
+        </a>
+        <div class="dropdown">
+          <a href="obra/programa-anual.html"><span class="icon"><i class="fas fa-calendar-alt"></i></span> Programa Anual de Obra</a>
+          <a href="obra/avances.html"><span class="icon"><i class="fas fa-tasks"></i></span> Avances de Obra</a>
+          <a href="obra/contratos.html"><span class="icon"><i class="fas fa-file-contract"></i></span> Contratos de Obra</a>
+          <a href="obra/supervisores.html"><span class="icon"><i class="fas fa-hard-hat"></i></span> Supervisión de Proyectos</a>
+          <div class="sub-item">
+            <a href="#" style="justify-content:space-between;">
+              <span style="display:flex;align-items:center;gap:8px"><span class="icon"><i class="fas fa-folder-open"></i></span> Ejercicios Anteriores</span>
+              <i class="fas fa-chevron-right" style="font-size:10px;color:#999"></i>
+            </a>
+            <div class="sub-dropdown">
+              <a href="obra/2024.html"><span class="icon"><i class="fas fa-calendar"></i></span> Ejercicio 2024</a>
+              <a href="obra/2023.html"><span class="icon"><i class="fas fa-calendar"></i></span> Ejercicio 2023</a>
+              <a href="obra/2022.html"><span class="icon"><i class="fas fa-calendar"></i></span> Ejercicio 2022</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trámites y Servicios -->
+      <div class="nav-item">
+        <a href="tramites.html" class="nav-link">
+          Trámites <i class="fas fa-chevron-down arrow"></i>
+        </a>
+        <div class="dropdown">
+          <a href="tramites/registro-civil.html"><span class="icon"><i class="fas fa-baby"></i></span> Registro Civil</a>
+          <a href="tramites/catastro.html"><span class="icon"><i class="fas fa-map"></i></span> Catastro Municipal</a>
+          <a href="tramites/tesoreria.html"><span class="icon"><i class="fas fa-piggy-bank"></i></span> Tesorería y Pagos</a>
+          <a href="tramites/obras.html"><span class="icon"><i class="fas fa-building"></i></span> Licencias de Construcción</a>
+          <a href="tramites/seguridad.html"><span class="icon"><i class="fas fa-shield-alt"></i></span> Seguridad Pública</a>
+          <a href="tramites/padron.html"><span class="icon"><i class="fas fa-store"></i></span> Padrón de Comercios</a>
+        </div>
+      </div>
+
+      <!-- Comunicación Social -->
+      <div class="nav-item">
+        <a href="#" class="nav-link">
+          Noticias <i class="fas fa-chevron-down arrow"></i>
+        </a>
+        <div class="dropdown">
+          <a href="noticias/index.html"><span class="icon"><i class="fas fa-newspaper"></i></span> Noticias Municipales</a>
+          <a href="noticias/galeria.html"><span class="icon"><i class="fas fa-images"></i></span> Galería Fotográfica</a>
+          <a href="noticias/videos.html"><span class="icon"><i class="fas fa-video"></i></span> Videos Oficiales</a>
+          <a href="noticias/boletines.html"><span class="icon"><i class="fas fa-file-alt"></i></span> Boletines de Prensa</a>
+          <a href="noticias/agenda.html"><span class="icon"><i class="fas fa-calendar-check"></i></span> Agenda Municipal</a>
+        </div>
+      </div>
+
+      <!-- Turismo -->
+      <div class="nav-item">
+        <a href="turismo.html" class="nav-link">
+          Turismo <i class="fas fa-chevron-down arrow"></i>
+        </a>
+        <div class="dropdown">
+          <a href="turismo/atractivos.html"><span class="icon"><i class="fas fa-mountain"></i></span> Atractivos Turísticos</a>
+          <a href="turismo/gastronomia.html"><span class="icon"><i class="fas fa-utensils"></i></span> Gastronomía Local</a>
+          <a href="turismo/eventos.html"><span class="icon"><i class="fas fa-star"></i></span> Eventos y Festividades</a>
+          <a href="turismo/como-llegar.html"><span class="icon"><i class="fas fa-route"></i></span> Cómo Llegar</a>
+        </div>
+      </div>
+
+      <!-- Contacto -->
+      <div class="nav-item">
+        <a href="contacto.html" class="nav-link">
+          <i class="fas fa-envelope" style="font-size:12px"></i> Contacto
+        </a>
+      </div>
+
+      <!-- Toggle móvil -->
+      <button class="nav-toggle" aria-label="Menú móvil">
+        <i class="fas fa-bars"></i>
+      </button>
+
+    </div><!-- /navbar-inner -->
+  </div>
+</nav>
+
+<!-- ==================== HERO ==================== -->
+<section class="hero" aria-label="Presentación principal">
+  <div class="hero-slides">
+
+    <div class="hero-slide">
+      <div class="hero-pattern"></div>
+      <div class="hero-content container">
+        <span class="tag"><i class="fas fa-bullhorn" style="margin-right:5px"></i>Gobierno 2022–2025</span>
+        <h2>Trabajando por un Chontla más fuerte y transparente</h2>
+        <p>Un gobierno cercano a la gente, comprometido con el desarrollo y bienestar de todos los chontlecos.</p>
+        <a href="transparencia.html" class="btn-hero">
+          <i class="fas fa-eye"></i> Ver Transparencia
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-slide">
+      <div class="hero-pattern"></div>
+      <div class="hero-content container">
+        <span class="tag"><i class="fas fa-hard-hat" style="margin-right:5px"></i>Obra Pública</span>
+        <h2>Invirtiendo en la infraestructura que Chontla merece</h2>
+        <p>Obras de pavimentación, agua potable, alumbrado público y espacios de recreación para toda la familia.</p>
+        <a href="obra/programa-anual.html" class="btn-hero">
+          <i class="fas fa-search"></i> Ver Obras en Curso
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-slide">
+      <div class="hero-pattern"></div>
+      <div class="hero-content container">
+        <span class="tag"><i class="fas fa-laptop" style="margin-right:5px"></i>Servicios Digitales</span>
+        <h2>Realiza tus trámites desde casa, fácil y seguro</h2>
+        <p>Accede a pagos en línea, descarga de documentos y seguimiento de solicitudes sin salir de tu hogar.</p>
+        <a href="tramites.html" class="btn-hero">
+          <i class="fas fa-arrow-right"></i> Trámites en Línea
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="hero-arrow prev" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+  <button class="hero-arrow next" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>
+
+  <div class="hero-nav">
+    <button class="hero-dot active" aria-label="Slide 1"></button>
+    <button class="hero-dot" aria-label="Slide 2"></button>
+    <button class="hero-dot" aria-label="Slide 3"></button>
+  </div>
+</section>
+
+<!-- ==================== ESTADÍSTICAS ==================== -->
+<div class="stats-bar">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="num" data-count="48" data-suffix=" obras">0</div>
+        <div class="label">Obras concluidas 2024</div>
+      </div>
+      <div class="stat-item">
+        <div class="num" data-count="12500" data-suffix="">0</div>
+        <div class="label">Habitantes beneficiados</div>
+      </div>
+      <div class="stat-item">
+        <div class="num" data-count="3200" data-suffix="">0</div>
+        <div class="label">Trámites atendidos</div>
+      </div>
+      <div class="stat-item">
+        <div class="num" data-count="96" data-suffix="%">0</div>
+        <div class="label">Satisfacción ciudadana</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== ACCESOS RÁPIDOS ==================== -->
+<section class="section section-alt" aria-labelledby="accesos-titulo">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Accesos Rápidos</span>
+      <h2 id="accesos-titulo">¿Qué necesitas hoy?</h2>
+      <p>Los servicios más solicitados por los ciudadanos de Chontla, al alcance de un clic.</p>
+      <div class="divider-line"></div>
+    </div>
+
+    <div class="accesos-grid">
+      <a href="tramites/registro-civil.html" class="acceso-item">
+        <div class="acceso-icon"><i class="fas fa-baby fa-lg"></i></div>
+        <span class="name">Actas de Nacimiento</span>
+      </a>
+      <a href="tramites/tesoreria.html" class="acceso-item">
+        <div class="acceso-icon"><i class="fas fa-file-invoice-dollar fa-lg"></i></div>
+        <span class="name">Pago de Predial</span>
+      </a>
+      <a href="transparencia/cuenta-publica.html" class="acceso-item">
+        <div class="acceso-icon"><i class="fas fa-chart-pie fa-lg"></i></div>
+        <span class="name">Cuenta Pública</span>
+      </a>
+      <a href="tramites/catastro.html" class="acceso-item">
+        <div class="acceso-icon"><i class="fas fa-map-marked-alt fa-lg"></i></div>
+        <span class="name">Catastro</span>
+      </a>
+      <a href="transparencia/licitaciones.html" class="acceso-item">
+        <div class="acceso-icon"><i class="fas fa-gavel fa-lg"></i></div>
+        <span class="name">Licitaciones</span>
+      </a>
+      <a href="quejas.html" class="acceso-item">
+        <div class="acceso-icon"><i class="fas fa-comment-dots fa-lg"></i></div>
+        <span class="name">Quejas y Denuncias</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SERVICIOS MUNICIPALES ==================== -->
+<section class="section" aria-labelledby="servicios-titulo">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Servicios Municipales</span>
+      <h2 id="servicios-titulo">Te servimos con compromiso</h2>
+      <p>Cada área municipal trabaja para brindarte la mejor atención y servicios de calidad.</p>
+      <div class="divider-line"></div>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card" onclick="location.href='servicios/agua.html'">
+        <div class="icon-wrap"><span>💧</span></div>
+        <h3>Agua Potable y Saneamiento</h3>
+        <p>Reportes de fugas, nuevas conexiones y pago del servicio de agua en tu colonia.</p>
+      </div>
+      <div class="service-card" onclick="location.href='servicios/seguridad.html'">
+        <div class="icon-wrap"><span>🚓</span></div>
+        <h3>Seguridad Pública</h3>
+        <p>Emergencias, vigilancia preventiva y denuncia ciudadana al servicio de tu familia.</p>
+      </div>
+      <div class="service-card" onclick="location.href='servicios/educacion.html'">
+        <div class="icon-wrap"><span>🎓</span></div>
+        <h3>Educación y Cultura</h3>
+        <p>Programas educativos, becas municipales y actividades culturales para la comunidad.</p>
+      </div>
+      <div class="service-card" onclick="location.href='servicios/salud.html'">
+        <div class="icon-wrap"><span>🏥</span></div>
+        <h3>Salud Municipal</h3>
+        <p>Jornadas de salud, vacunación y apoyo a adultos mayores y personas vulnerables.</p>
+      </div>
+      <div class="service-card" onclick="location.href='servicios/limpia.html'">
+        <div class="icon-wrap"><span>♻️</span></div>
+        <h3>Limpia y Medio Ambiente</h3>
+        <p>Recolección de residuos, campañas de reciclaje y cuidado del entorno natural.</p>
+      </div>
+      <div class="service-card" onclick="location.href='servicios/alumbrado.html'">
+        <div class="icon-wrap"><span>💡</span></div>
+        <h3>Alumbrado Público</h3>
+        <p>Reporte de luminarias dañadas y programa de modernización en colonias y comunidades.</p>
+      </div>
+      <div class="service-card" onclick="location.href='servicios/mercados.html'">
+        <div class="icon-wrap"><span>🏪</span></div>
+        <h3>Mercados y Comercio</h3>
+        <p>Permisos de funcionamiento, regulación de comercio ambulante y apoyo a microempresas.</p>
+      </div>
+      <div class="service-card" onclick="location.href='servicios/deportes.html'">
+        <div class="icon-wrap"><span>⚽</span></div>
+        <h3>Deporte y Recreación</h3>
+        <p>Canchas deportivas, torneos comunitarios y actividades físicas para todas las edades.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TRANSPARENCIA DESTACADA ==================== -->
+<section class="transparencia-section" aria-labelledby="trans-titulo">
+  <div class="container">
+    <div class="transparencia-inner">
+      <div class="transparencia-text">
+        <span class="tag"><i class="fas fa-eye" style="margin-right:5px"></i>Gobierno Abierto</span>
+        <h2 id="trans-titulo">Transparencia y Rendición de Cuentas</h2>
+        <p>Conforme a la Ley General de Transparencia y Acceso a la Información Pública, el Ayuntamiento pone a tu disposición toda la información sobre el ejercicio de los recursos y el desempeño de sus funciones.</p>
+        <a href="transparencia.html" class="btn-hero">
+          <i class="fas fa-folder-open"></i> Acceder al Portal de Transparencia
+        </a>
+      </div>
+      <div class="trans-links">
+        <a href="transparencia/cuenta-publica.html" class="trans-link-item">
+          <span class="icon"><i class="fas fa-file-invoice-dollar"></i></span>
+          <span class="text">Cuenta Pública</span>
+        </a>
+        <a href="transparencia/nomina.html" class="trans-link-item">
+          <span class="icon"><i class="fas fa-users"></i></span>
+          <span class="text">Nómina Pública</span>
+        </a>
+        <a href="transparencia/licitaciones.html" class="trans-link-item">
+          <span class="icon"><i class="fas fa-gavel"></i></span>
+          <span class="text">Licitaciones</span>
+        </a>
+        <a href="transparencia/auditoria.html" class="trans-link-item">
+          <span class="icon"><i class="fas fa-search-dollar"></i></span>
+          <span class="text">Auditorías</span>
+        </a>
+        <a href="transparencia/declaraciones.html" class="trans-link-item">
+          <span class="icon"><i class="fas fa-id-card"></i></span>
+          <span class="text">Declaraciones Patrimoniales</span>
+        </a>
+        <a href="transparencia/solicitudes.html" class="trans-link-item">
+          <span class="icon"><i class="fas fa-envelope-open-text"></i></span>
+          <span class="text">Solicitar Información</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== NOTICIAS ==================== -->
+<section class="section section-alt" aria-labelledby="noticias-titulo">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Comunicación Social</span>
+      <h2 id="noticias-titulo">Últimas Noticias</h2>
+      <p>Mantente informado sobre las acciones, logros y eventos del Ayuntamiento de Chontla.</p>
+      <div class="divider-line"></div>
+    </div>
+
+    <div class="news-grid">
+
+      <!-- Noticia principal -->
+      <article class="news-card">
+        <div class="news-img news-img-1">
+          <span class="categoria">Obra Pública</span>
+          <div class="news-img-icon">🏗️</div>
+        </div>
+        <div class="news-body">
+          <p class="fecha"><i class="fas fa-calendar-alt" style="margin-right:5px"></i>28 de mayo, 2025</p>
+          <h3>Inicia rehabilitación de pavimento en la calle Morelos; beneficiará a más de 400 familias</h3>
+          <p>El Ayuntamiento de Chontla dio inicio a los trabajos de rehabilitación de la calle Morelos en el centro municipal. La obra contempla la colocación de adoquín, cunetas y guarniciones en una extensión de 1.2 kilómetros, beneficiando directamente a más de 400 familias del área.</p>
+        </div>
+        <div class="news-footer">
+          <a href="noticias/pavimento-morelos.html" class="leer-mas">Leer más <i class="fas fa-arrow-right"></i></a>
+          <span style="font-size:11.5px;color:#999"><i class="fas fa-eye" style="margin-right:3px"></i>1,240 vistas</span>
+        </div>
+      </article>
+
+      <!-- Noticia 2 -->
+      <article class="news-card">
+        <div class="news-img news-img-2">
+          <span class="categoria">Salud</span>
+          <div class="news-img-icon">🏥</div>
+        </div>
+        <div class="news-body">
+          <p class="fecha"><i class="fas fa-calendar-alt" style="margin-right:5px"></i>22 de mayo, 2025</p>
+          <h3>Jornada de vacunación gratuita beneficia a 1,500 chontlecos</h3>
+          <p>En coordinación con la Secretaría de Salud de Veracruz, el municipio realizó con éxito la jornada de vacunación para niños y adultos mayores.</p>
+        </div>
+        <div class="news-footer">
+          <a href="noticias/jornada-vacunacion.html" class="leer-mas">Leer más <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <!-- Noticia 3 -->
+      <article class="news-card">
+        <div class="news-img news-img-3">
+          <span class="categoria">Finanzas</span>
+          <div class="news-img-icon">💰</div>
+        </div>
+        <div class="news-body">
+          <p class="fecha"><i class="fas fa-calendar-alt" style="margin-right:5px"></i>15 de mayo, 2025</p>
+          <h3>Presentan Cuenta Pública del primer trimestre 2025</h3>
+          <p>El Tesorero Municipal presentó ante el Cabildo el informe financiero del primer trimestre, mostrando avances positivos en la recaudación y ejercicio del presupuesto.</p>
+        </div>
+        <div class="news-footer">
+          <a href="noticias/cuenta-publica-t1.html" class="leer-mas">Leer más <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+    </div>
+
+    <div style="text-align:center;margin-top:30px;">
+      <a href="noticias/index.html" class="btn-tramites" style="display:inline-flex">
+        <i class="fas fa-newspaper"></i> Ver todas las noticias
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CONTACTO BANNER ==================== -->
+<div class="contacto-banner" aria-label="Información de contacto">
+  <div class="container">
+    <div class="contacto-inner">
+      <div class="contacto-item">
+        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+        <h4>Visítanos</h4>
+        <p>Palacio Municipal S/N,<br>Col. Centro, Chontla, Veracruz<br>C.P. 93360</p>
+      </div>
+      <div class="contacto-item">
+        <div class="icon"><i class="fas fa-clock"></i></div>
+        <h4>Horario de Atención</h4>
+        <p>Lunes a Viernes<br>8:00 – 15:00 hrs<br>Sin costo al ciudadano</p>
+      </div>
+      <div class="contacto-item">
+        <div class="icon"><i class="fas fa-envelope"></i></div>
+        <h4>Escríbenos</h4>
+        <a href="tel:7891234567">(789) 123-4567</a><br>
+        <a href="mailto:presidencia@chontla.gob.mx">presidencia@chontla.gob.mx</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Columna 1 -->
+      <div class="footer-brand">
+        <h3><i class="fas fa-shield-halved" style="color:var(--rojo-pri);margin-right:8px"></i>H. Ayuntamiento de Chontla</h3>
+        <p>Administración Municipal 2022–2025. Trabajando cada día por el bienestar, progreso y la dignidad de todos los ciudadanos de Chontla, Veracruz.</p>
+        <div class="footer-social">
+          <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" title="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Columna 2 -->
+      <div class="footer-col">
+        <h4>Transparencia</h4>
+        <ul>
+          <li><a href="transparencia/estructura.html">Estructura Orgánica</a></li>
+          <li><a href="transparencia/cuenta-publica.html">Cuenta Pública</a></li>
+          <li><a href="transparencia/nomina.html">Nómina de Personal</a></li>
+          <li><a href="transparencia/licitaciones.html">Licitaciones</a></li>
+          <li><a href="transparencia/declaraciones.html">Declaraciones Patrimoniales</a></li>
+          <li><a href="transparencia/solicitudes.html">Solicitudes de Información</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 3 -->
+      <div class="footer-col">
+        <h4>Gobierno</h4>
+        <ul>
+          <li><a href="historia.html">Historia del Municipio</a></li>
+          <li><a href="cabildo.html">H. Cabildo</a></li>
+          <li><a href="organigrama.html">Organigrama</a></li>
+          <li><a href="reglamentos.html">Reglamentos</a></li>
+          <li><a href="plan-desarrollo.html">Plan de Desarrollo</a></li>
+          <li><a href="quejas.html">Quejas y Denuncias</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 4 -->
+      <div class="footer-col">
+        <h4>Recursos de Gobierno</h4>
+        <ul>
+          <li><a href="https://www.gob.mx" target="_blank" rel="noopener">Gobierno Federal</a></li>
+          <li><a href="https://veracruz.gob.mx" target="_blank" rel="noopener">Gob. de Veracruz</a></li>
+          <li><a href="https://www.inegi.org.mx" target="_blank" rel="noopener">INEGI</a></li>
+          <li><a href="https://www.imss.gob.mx" target="_blank" rel="noopener">IMSS</a></li>
+          <li><a href="https://www.sat.gob.mx" target="_blank" rel="noopener">SAT</a></li>
+          <li><a href="transparencia/infomex.html">Portal INFOMEX Veracruz</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p>© <script>document.write(new Date().getFullYear())</script> H. Ayuntamiento de Chontla, Veracruz. Todos los derechos reservados.</p>
+      <div class="footer-logos">
+        <span class="logo-gov">🇲🇽 Gob. MX</span>
+        <span class="logo-gov">Veracruz</span>
+      </div>
+      <p>
+        <a href="aviso-privacidad.html">Aviso de Privacidad</a> &nbsp;|&nbsp;
+        <a href="terminos.html">Términos de Uso</a> &nbsp;|&nbsp;
+        <a href="accesibilidad.html">Accesibilidad</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- ==================== MODAL BÚSQUEDA ==================== -->
+<div class="search-overlay" role="dialog" aria-modal="true" aria-label="Búsqueda">
+  <button class="btn-close-search" aria-label="Cerrar búsqueda">✕</button>
+  <div class="search-box">
+    <h3><i class="fas fa-search" style="margin-right:8px"></i>¿Qué estás buscando?</h3>
+    <div class="search-input-wrap">
+      <input type="text" placeholder="Ej: predial, actas, licitaciones..." aria-label="Buscar" autofocus />
+      <button type="submit" aria-label="Buscar"><i class="fas fa-search"></i></button>
+    </div>
+    <p style="font-size:12px;color:#888;margin-top:10px">Sugerencias: trámites, transparencia, obra pública, noticias</p>
+  </div>
+</div>
+
+<!-- Botón volver arriba -->
+<button class="back-top" aria-label="Volver al inicio">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
