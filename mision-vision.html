@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Misión y Visión | H. Ayuntamiento de Chontla</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+<div id="site-header"></div>
+<div class="page-hero-inner">
+  <div class="container">
+    <div class="page-breadcrumb"><a href="index.html"><i class="fas fa-home"></i></a><span class="sep">›</span><span>Misión y Visión</span></div>
+    <h1><i class="fas fa-bullseye" style="margin-right:10px"></i>Misión y Visión</h1>
+    <p>Los principios que guían la presente administración municipal.</p>
+  </div>
+</div>
+<main class="section">
+  <div class="container">
+    <!-- Foto del equipo de gobierno -->
+    <div class="img-placeholder" style="height:360px;margin-bottom:50px">
+      <span class="ph-badge">Foto requerida</span>
+      <i class="fas fa-users"></i>
+      <p class="ph-title">Foto del equipo de gobierno / Palacio Municipal</p>
+      <p class="ph-size">📐 1920 × 700 px</p>
+      <p class="ph-hint">Formato JPG · Horizontal · Foto panorámica o del equipo de trabajo</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-bottom:50px">
+      <div style="background:linear-gradient(135deg,var(--rojo-oscuro),var(--rojo-pri));color:#fff;border-radius:8px;padding:36px;position:relative;overflow:hidden">
+        <div style="position:absolute;top:-20px;right:-20px;font-size:80px;opacity:.1"><i class="fas fa-bullseye"></i></div>
+        <h2 style="color:#fff;font-size:22px;margin-bottom:16px;border:none;padding:0"><i class="fas fa-bullseye" style="margin-right:10px"></i>Misión</h2>
+        <p style="opacity:.92;line-height:1.8;font-size:14.5px">Brindar servicios públicos de calidad con eficiencia, transparencia y honradez, que respondan a las necesidades de la ciudadanía de Chontla, promoviendo el desarrollo integral del municipio con apego a la legalidad y en beneficio de todos los sectores de la sociedad.</p>
+      </div>
+      <div style="background:linear-gradient(135deg,var(--verde-oscuro),var(--verde-mexico));color:#fff;border-radius:8px;padding:36px;position:relative;overflow:hidden">
+        <div style="position:absolute;top:-20px;right:-20px;font-size:80px;opacity:.1"><i class="fas fa-eye"></i></div>
+        <h2 style="color:#fff;font-size:22px;margin-bottom:16px;border:none;padding:0"><i class="fas fa-eye" style="margin-right:10px"></i>Visión</h2>
+        <p style="opacity:.92;line-height:1.8;font-size:14.5px">Ser un municipio modelo en el Estado de Veracruz, reconocido por su buen gobierno, sus obras de infraestructura, la calidad de vida de sus habitantes y la participación activa de la ciudadanía en la toma de decisiones públicas.</p>
+      </div>
+    </div>
+
+    <div class="section-header" style="text-align:left;margin-bottom:24px">
+      <span class="section-tag">Principios</span>
+      <h2 style="font-size:22px;margin-top:8px">Valores Institucionales</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px">
+      <?php $valores = [['fas fa-hand-holding-heart','Honestidad','Actuamos con integridad y ética en cada decisión.'],['fas fa-eye','Transparencia','Rendimos cuentas a la ciudadanía de forma abierta.'],['fas fa-balance-scale','Justicia','Aplicamos las normas con equidad e imparcialidad.'],['fas fa-hands-helping','Servicio','El ciudadano es el centro de nuestra gestión.']]; foreach($valores as $v): ?>
+      <div style="background:var(--blanco);border-radius:8px;padding:24px;box-shadow:var(--sombra);text-align:center">
+        <div style="width:54px;height:54px;background:linear-gradient(135deg,#FFF0F3,#FFDDE3);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-size:22px;color:var(--rojo-pri)"><i class="<?php echo $v[0]; ?>"></i></div>
+        <h3 style="font-size:14px;font-weight:700;margin-bottom:8px"><?php echo $v[1]; ?></h3>
+        <p style="font-size:12.5px;color:var(--gris-texto)"><?php echo $v[2]; ?></p>
+      </div>
+      <?php endforeach; ?>
+      <div style="background:var(--blanco);border-radius:8px;padding:24px;box-shadow:var(--sombra);text-align:center"><div style="width:54px;height:54px;background:linear-gradient(135deg,#FFF0F3,#FFDDE3);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-size:22px;color:var(--rojo-pri)"><i class="fas fa-hand-holding-heart"></i></div><h3 style="font-size:14px;font-weight:700;margin-bottom:8px">Honestidad</h3><p style="font-size:12.5px;color:var(--gris-texto)">Actuamos con integridad y ética en cada decisión.</p></div>
+      <div style="background:var(--blanco);border-radius:8px;padding:24px;box-shadow:var(--sombra);text-align:center"><div style="width:54px;height:54px;background:linear-gradient(135deg,#FFF0F3,#FFDDE3);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-size:22px;color:var(--rojo-pri)"><i class="fas fa-eye"></i></div><h3 style="font-size:14px;font-weight:700;margin-bottom:8px">Transparencia</h3><p style="font-size:12.5px;color:var(--gris-texto)">Rendimos cuentas a la ciudadanía de forma abierta.</p></div>
+      <div style="background:var(--blanco);border-radius:8px;padding:24px;box-shadow:var(--sombra);text-align:center"><div style="width:54px;height:54px;background:linear-gradient(135deg,#FFF0F3,#FFDDE3);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-size:22px;color:var(--rojo-pri)"><i class="fas fa-balance-scale"></i></div><h3 style="font-size:14px;font-weight:700;margin-bottom:8px">Justicia</h3><p style="font-size:12.5px;color:var(--gris-texto)">Aplicamos las normas con equidad e imparcialidad.</p></div>
+      <div style="background:var(--blanco);border-radius:8px;padding:24px;box-shadow:var(--sombra);text-align:center"><div style="width:54px;height:54px;background:linear-gradient(135deg,#FFF0F3,#FFDDE3);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-size:22px;color:var(--rojo-pri)"><i class="fas fa-hands-helping"></i></div><h3 style="font-size:14px;font-weight:700;margin-bottom:8px">Servicio</h3><p style="font-size:12.5px;color:var(--gris-texto)">El ciudadano es el centro de nuestra gestión.</p></div>
+    </div>
+  </div>
+</main>
+<div id="site-footer"></div>
+<script>const BASE = '';</script>
+<script src="js/components.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

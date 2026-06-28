@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reglamentos | H. Ayuntamiento de Chontla</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+<div id="site-header"></div>
+<div class="page-hero-inner">
+  <div class="container">
+    <div class="page-breadcrumb"><a href="index.html"><i class="fas fa-home"></i></a><span class="sep">›</span><span>Reglamentos Municipales</span></div>
+    <h1><i class="fas fa-book" style="margin-right:10px"></i>Reglamentos Municipales</h1>
+    <p>Marco normativo del H. Ayuntamiento de Chontla, Veracruz.</p>
+  </div>
+</div>
+<main class="section">
+  <div class="container">
+    <div class="tabla-wrap">
+      <div class="tabla-header"><i class="fas fa-book"></i> Reglamentos Vigentes</div>
+      <table>
+        <thead><tr><th>Reglamento</th><th>Aprobación</th><th>Última actualización</th><th>Formato</th><th>Acción</th></tr></thead>
+        <tbody>
+          <?php $regs=[['Reglamento Interior del Ayuntamiento','2022','2023'],['Reglamento de la Administración Pública Municipal','2022','2023'],['Reglamento de Construcciones','2022','2022'],['Reglamento de Mercados y Comercio','2022','2022'],['Reglamento de Policía y Buen Gobierno','2022','2023'],['Reglamento de Protección Civil','2022','2022'],['Reglamento del Servicio de Agua Potable','2022','2023'],['Bando de Policía y Gobierno','2023','2024']]; foreach($regs as $r): ?>
+          <tr><td><i class="fas fa-file-pdf" style="color:#C62828;margin-right:8px"></i><?php echo $r[0]; ?></td><td><?php echo $r[1]; ?></td><td><?php echo $r[2]; ?></td><td><span class="badge badge-pdf">PDF</span></td><td><a href="#" class="btn-download"><i class="fas fa-download"></i> Descargar</a></td></tr>
+          <?php endforeach; ?>
+          <tr><td><i class="fas fa-file-pdf" style="color:#C62828;margin-right:8px"></i>Reglamento Interior del Ayuntamiento</td><td>2022</td><td>2023</td><td><span style="display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;background:#FFEBEE;color:#C62828">PDF</span></td><td><a href="#" style="display:inline-flex;align-items:center;gap:5px;color:var(--rojo-pri);font-size:12.5px;font-weight:600;padding:5px 12px;border-radius:4px;background:#FFF5F5;transition:all .25s"><i class="fas fa-download"></i> Descargar</a></td></tr>
+          <tr><td><i class="fas fa-file-pdf" style="color:#C62828;margin-right:8px"></i>Reglamento de la Administración Pública Municipal</td><td>2022</td><td>2023</td><td><span style="display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;background:#FFEBEE;color:#C62828">PDF</span></td><td><a href="#" style="display:inline-flex;align-items:center;gap:5px;color:var(--rojo-pri);font-size:12.5px;font-weight:600;padding:5px 12px;border-radius:4px;background:#FFF5F5"><i class="fas fa-download"></i> Descargar</a></td></tr>
+          <tr><td><i class="fas fa-file-pdf" style="color:#C62828;margin-right:8px"></i>Reglamento de Construcciones</td><td>2022</td><td>2022</td><td><span style="display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;background:#FFEBEE;color:#C62828">PDF</span></td><td><a href="#" style="display:inline-flex;align-items:center;gap:5px;color:var(--rojo-pri);font-size:12.5px;font-weight:600;padding:5px 12px;border-radius:4px;background:#FFF5F5"><i class="fas fa-download"></i> Descargar</a></td></tr>
+          <tr><td><i class="fas fa-file-pdf" style="color:#C62828;margin-right:8px"></i>Reglamento de Policía y Buen Gobierno</td><td>2022</td><td>2023</td><td><span style="display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;background:#FFEBEE;color:#C62828">PDF</span></td><td><a href="#" style="display:inline-flex;align-items:center;gap:5px;color:var(--rojo-pri);font-size:12.5px;font-weight:600;padding:5px 12px;border-radius:4px;background:#FFF5F5"><i class="fas fa-download"></i> Descargar</a></td></tr>
+          <tr><td><i class="fas fa-file-pdf" style="color:#C62828;margin-right:8px"></i>Bando de Policía y Gobierno 2024</td><td>2024</td><td>2024</td><td><span style="display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;background:#FFEBEE;color:#C62828">PDF</span></td><td><a href="#" style="display:inline-flex;align-items:center;gap:5px;color:var(--rojo-pri);font-size:12.5px;font-weight:600;padding:5px 12px;border-radius:4px;background:#FFF5F5"><i class="fas fa-download"></i> Descargar</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div style="background:var(--gris-claro);border-radius:8px;padding:20px;font-size:13px;color:var(--gris-texto);display:flex;gap:12px;align-items:flex-start">
+      <i class="fas fa-info-circle" style="color:var(--dorado);font-size:18px;margin-top:2px;flex-shrink:0"></i>
+      <p style="margin:0">Los reglamentos municipales son los instrumentos normativos que regulan la organización y funcionamiento del Ayuntamiento. Para solicitar copias certificadas, acuda a la Secretaría del Ayuntamiento en días y horas hábiles o escriba a <a href="mailto:secretaria@chontla.gob.mx">secretaria@chontla.gob.mx</a>.</p>
+    </div>
+  </div>
+</main>
+<div id="site-footer"></div>
+<script>const BASE = '';</script>
+<script src="js/components.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

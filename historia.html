@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Historia | H. Ayuntamiento de Chontla</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+<div id="site-header"></div>
+
+<div class="page-hero-inner">
+  <div class="container">
+    <div class="page-breadcrumb">
+      <a href="index.html"><i class="fas fa-home"></i></a><span class="sep">›</span>
+      <a href="#">Municipio</a><span class="sep">›</span><span>Historia</span>
+    </div>
+    <h1><i class="fas fa-landmark" style="margin-right:10px"></i>Historia del Municipio</h1>
+    <p>Conoce los orígenes y la evolución histórica de Chontla, Veracruz.</p>
+  </div>
+</div>
+
+<main class="section">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;margin-bottom:50px">
+      <div class="page-content">
+        <h2>Orígenes de Chontla</h2>
+        <p>Chontla es un municipio ubicado en la región Huasteca del estado de Veracruz, México. Su nombre proviene del náhuatl y hace referencia a los antiguos pobladores de la región que habitaron estas tierras desde tiempos precolombinos.</p>
+        <p>El municipio fue establecido oficialmente durante el período de reorganización territorial del estado de Veracruz, conservando sus tradiciones y costumbres a lo largo de los siglos.</p>
+        <h2>Época Colonial</h2>
+        <p>Durante la época colonial, la región de Chontla formó parte de las encomiendas establecidas por los conquistadores españoles. La mezcla de culturas indígenas y española dio origen a la identidad cultural única que caracteriza al municipio hasta el día de hoy.</p>
+        <h2>Siglo XIX y XX</h2>
+        <p>Con la independencia de México, Chontla se consolidó como municipio libre, participando activamente en los procesos históricos que dieron forma al estado de Veracruz y al país. A lo largo del siglo XX, el municipio experimentó importantes transformaciones en materia de infraestructura, educación y servicios públicos.</p>
+      </div>
+      <div>
+        <!-- IMAGEN: Foto histórica o panorámica del municipio -->
+        <div class="img-placeholder" style="height:320px;margin-bottom:20px">
+          <span class="ph-badge">Foto requerida</span>
+          <i class="fas fa-image"></i>
+          <p class="ph-title">Foto histórica / Panorámica del municipio</p>
+          <p class="ph-size">📐 1200 × 800 px</p>
+          <p class="ph-hint">Formato JPG · Sustituye este bloque con tu &lt;img&gt;</p>
+        </div>
+        <!-- IMAGEN: Escudo o símbolo del municipio -->
+        <div class="img-placeholder" style="height:240px">
+          <span class="ph-badge">Foto requerida</span>
+          <i class="fas fa-shield-halved"></i>
+          <p class="ph-title">Escudo o símbolo del municipio</p>
+          <p class="ph-size">📐 600 × 600 px</p>
+          <p class="ph-hint">Formato PNG con transparencia</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Línea del tiempo -->
+    <h2 style="font-size:22px;color:var(--rojo-pri);border-bottom:2px solid var(--gris-medio);padding-bottom:10px;margin-bottom:28px">
+      <i class="fas fa-history" style="margin-right:8px"></i>Línea del Tiempo
+    </h2>
+    <div style="position:relative;padding-left:40px">
+      <div style="position:absolute;left:16px;top:0;bottom:0;width:3px;background:var(--rojo-pri);border-radius:2px"></div>
+      <?php
+      $eventos = [
+        ['año'=>'Época prehispánica','desc'=>'Poblaciones indígenas chontales y teenek habitan la región.'],
+        ['año'=>'Siglo XVI','desc'=>'Llegada de los españoles y establecimiento de la encomienda colonial.'],
+        ['año'=>'1825','desc'=>'Reconocimiento oficial como municipio del Estado de Veracruz.'],
+        ['año'=>'1910-1917','desc'=>'Participación en el movimiento revolucionario mexicano.'],
+        ['año'=>'1960','desc'=>'Construcción del primer palacio municipal de concreto.'],
+        ['año'=>'1980-2000','desc'=>'Expansión de servicios de agua potable, electrificación y caminos rurales.'],
+        ['año'=>'2022','desc'=>'Inicio de la presente administración municipal 2022-2025.'],
+      ];
+      ?>
+      <?php foreach($eventos as $e): ?>
+      <div style="position:relative;margin-bottom:28px;padding-left:24px">
+        <div style="position:absolute;left:-32px;top:4px;width:14px;height:14px;background:var(--dorado);border-radius:50%;border:3px solid var(--blanco);box-shadow:0 0 0 3px var(--rojo-pri)"></div>
+        <strong style="font-size:13px;color:var(--rojo-pri);display:block;margin-bottom:3px"><?php echo $e['año']; ?></strong>
+        <p style="font-size:14px;color:#444;margin:0"><?php echo $e['desc']; ?></p>
+      </div>
+      <?php endforeach; ?>
+    </div>
+    <div style="position:relative;padding-left:40px">
+      <div style="position:absolute;left:16px;top:0;bottom:0;width:3px;background:var(--rojo-pri);border-radius:2px"></div>
+      <div style="position:relative;margin-bottom:28px;padding-left:24px"><div style="position:absolute;left:-32px;top:4px;width:14px;height:14px;background:var(--dorado);border-radius:50%;border:3px solid var(--blanco);box-shadow:0 0 0 3px var(--rojo-pri)"></div><strong style="font-size:13px;color:var(--rojo-pri);display:block;margin-bottom:3px">Época prehispánica</strong><p style="font-size:14px;color:#444;margin:0">Poblaciones indígenas chontales y teenek habitan la región.</p></div>
+      <div style="position:relative;margin-bottom:28px;padding-left:24px"><div style="position:absolute;left:-32px;top:4px;width:14px;height:14px;background:var(--dorado);border-radius:50%;border:3px solid var(--blanco);box-shadow:0 0 0 3px var(--rojo-pri)"></div><strong style="font-size:13px;color:var(--rojo-pri);display:block;margin-bottom:3px">Siglo XVI</strong><p style="font-size:14px;color:#444;margin:0">Llegada de los españoles y establecimiento de la encomienda colonial.</p></div>
+      <div style="position:relative;margin-bottom:28px;padding-left:24px"><div style="position:absolute;left:-32px;top:4px;width:14px;height:14px;background:var(--dorado);border-radius:50%;border:3px solid var(--blanco);box-shadow:0 0 0 3px var(--rojo-pri)"></div><strong style="font-size:13px;color:var(--rojo-pri);display:block;margin-bottom:3px">1825</strong><p style="font-size:14px;color:#444;margin:0">Reconocimiento oficial como municipio del Estado de Veracruz.</p></div>
+      <div style="position:relative;margin-bottom:28px;padding-left:24px"><div style="position:absolute;left:-32px;top:4px;width:14px;height:14px;background:var(--dorado);border-radius:50%;border:3px solid var(--blanco);box-shadow:0 0 0 3px var(--rojo-pri)"></div><strong style="font-size:13px;color:var(--rojo-pri);display:block;margin-bottom:3px">1910-1917</strong><p style="font-size:14px;color:#444;margin:0">Participación en el movimiento revolucionario mexicano.</p></div>
+      <div style="position:relative;margin-bottom:28px;padding-left:24px"><div style="position:absolute;left:-32px;top:4px;width:14px;height:14px;background:var(--dorado);border-radius:50%;border:3px solid var(--blanco);box-shadow:0 0 0 3px var(--rojo-pri)"></div><strong style="font-size:13px;color:var(--rojo-pri);display:block;margin-bottom:3px">1960</strong><p style="font-size:14px;color:#444;margin:0">Construcción del primer Palacio Municipal de concreto.</p></div>
+      <div style="position:relative;margin-bottom:28px;padding-left:24px"><div style="position:absolute;left:-32px;top:4px;width:14px;height:14px;background:var(--dorado);border-radius:50%;border:3px solid var(--blanco);box-shadow:0 0 0 3px var(--rojo-pri)"></div><strong style="font-size:13px;color:var(--rojo-pri);display:block;margin-bottom:3px">1980–2000</strong><p style="font-size:14px;color:#444;margin:0">Expansión de servicios de agua potable, electrificación y caminos rurales.</p></div>
+      <div style="position:relative;padding-left:24px"><div style="position:absolute;left:-32px;top:4px;width:14px;height:14px;background:var(--verde-mexico);border-radius:50%;border:3px solid var(--blanco);box-shadow:0 0 0 3px var(--verde-mexico)"></div><strong style="font-size:13px;color:var(--verde-mexico);display:block;margin-bottom:3px">2022 – Presente</strong><p style="font-size:14px;color:#444;margin:0">Inicio de la administración municipal 2022–2025 con enfoque en transparencia y obra pública.</p></div>
+    </div>
+  </div>
+</main>
+
+<div id="site-footer"></div>
+<script>const BASE = '';</script>
+<script src="js/components.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

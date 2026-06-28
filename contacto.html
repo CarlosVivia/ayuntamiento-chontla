@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><title>Contacto | H. Ayuntamiento de Chontla</title><link rel="stylesheet" href="css/styles.css"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/></head>
+<body>
+<div id="site-header"></div>
+<div class="page-hero-inner"><div class="container"><div class="page-breadcrumb"><a href="index.html"><i class="fas fa-home"></i></a><span class="sep">›</span><span>Contacto</span></div><h1><i class="fas fa-envelope" style="margin-right:10px"></i>Contacto</h1><p>Estamos para atenderte. Comunícate con el H. Ayuntamiento de Chontla.</p></div></div>
+<main class="section"><div class="container">
+  <div style="display:grid;grid-template-columns:1fr 400px;gap:36px;align-items:start">
+
+    <!-- Formulario de contacto -->
+    <div style="background:var(--blanco);border-radius:12px;box-shadow:var(--sombra);padding:32px">
+      <h2 style="font-size:20px;font-weight:700;margin-bottom:6px">Envíanos un mensaje</h2>
+      <p style="font-size:13.5px;color:var(--gris-texto);margin-bottom:24px">Tu mensaje será atendido en un plazo máximo de 5 días hábiles.</p>
+      <form action="#" method="post">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
+          <div><label style="font-size:13px;font-weight:600;display:block;margin-bottom:5px">Nombre completo *</label><input type="text" name="nombre" required placeholder="Tu nombre" style="width:100%;padding:10px 12px;border:1.5px solid #ddd;border-radius:6px;font-size:13.5px;box-sizing:border-box;font-family:inherit"></div>
+          <div><label style="font-size:13px;font-weight:600;display:block;margin-bottom:5px">Correo electrónico *</label><input type="email" name="email" required placeholder="tucorreo@ejemplo.com" style="width:100%;padding:10px 12px;border:1.5px solid #ddd;border-radius:6px;font-size:13.5px;box-sizing:border-box;font-family:inherit"></div>
+        </div>
+        <div style="margin-bottom:16px"><label style="font-size:13px;font-weight:600;display:block;margin-bottom:5px">Teléfono</label><input type="tel" name="telefono" placeholder="(789) 000-0000" style="width:100%;padding:10px 12px;border:1.5px solid #ddd;border-radius:6px;font-size:13.5px;box-sizing:border-box;font-family:inherit"></div>
+        <div style="margin-bottom:16px"><label style="font-size:13px;font-weight:600;display:block;margin-bottom:5px">Área / Departamento</label><select name="area" style="width:100%;padding:10px 12px;border:1.5px solid #ddd;border-radius:6px;font-size:13.5px;box-sizing:border-box;font-family:inherit;background:#fff"><option value="">Selecciona un área...</option><option>Presidencia Municipal</option><option>Secretaría Municipal</option><option>Tesorería</option><option>Obras Públicas</option><option>Seguridad Pública</option><option>Registro Civil</option><option>DIF Municipal</option><option>Otra área</option></select></div>
+        <div style="margin-bottom:16px"><label style="font-size:13px;font-weight:600;display:block;margin-bottom:5px">Asunto *</label><input type="text" name="asunto" required placeholder="Asunto de tu mensaje" style="width:100%;padding:10px 12px;border:1.5px solid #ddd;border-radius:6px;font-size:13.5px;box-sizing:border-box;font-family:inherit"></div>
+        <div style="margin-bottom:22px"><label style="font-size:13px;font-weight:600;display:block;margin-bottom:5px">Mensaje *</label><textarea name="mensaje" required rows="5" placeholder="Escribe tu mensaje aquí..." style="width:100%;padding:10px 12px;border:1.5px solid #ddd;border-radius:6px;font-size:13.5px;box-sizing:border-box;font-family:inherit;resize:vertical"></textarea></div>
+        <button type="submit" class="btn-primary" style="width:100%;justify-content:center"><i class="fas fa-paper-plane" style="margin-right:8px"></i>Enviar mensaje</button>
+      </form>
+    </div>
+
+    <!-- Datos de contacto -->
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <div style="background:var(--blanco);border-radius:12px;box-shadow:var(--sombra);padding:24px">
+        <h3 style="font-size:16px;font-weight:700;margin-bottom:18px;color:var(--rojo-pri)"><i class="fas fa-info-circle" style="margin-right:8px"></i>Datos de Contacto</h3>
+        <div style="display:flex;flex-direction:column;gap:14px;font-size:13.5px">
+          <div style="display:flex;gap:12px"><i class="fas fa-map-marker-alt" style="color:var(--rojo-pri);font-size:16px;margin-top:2px;flex-shrink:0"></i><span>Palacio Municipal, Calle Hidalgo s/n, Centro, Chontla, Veracruz, C.P. 92960</span></div>
+          <div style="display:flex;gap:12px"><i class="fas fa-phone" style="color:var(--rojo-pri);font-size:16px;margin-top:2px;flex-shrink:0"></i><a href="tel:+527891234567" style="color:inherit;text-decoration:none">(789) 123-4567</a></div>
+          <div style="display:flex;gap:12px"><i class="fas fa-envelope" style="color:var(--rojo-pri);font-size:16px;margin-top:2px;flex-shrink:0"></i><a href="mailto:contacto@chontla.gob.mx" style="color:inherit;text-decoration:none">contacto@chontla.gob.mx</a></div>
+          <div style="display:flex;gap:12px"><i class="fas fa-clock" style="color:var(--rojo-pri);font-size:16px;margin-top:2px;flex-shrink:0"></i><span>Lunes a Viernes · 8:00 – 15:00 hrs</span></div>
+        </div>
+      </div>
+
+      <!-- IMAGEN: Foto de la fachada del Palacio Municipal -->
+      <div class="img-placeholder" style="height:220px"><span class="ph-badge">Foto requerida</span><i class="fas fa-building"></i><p class="ph-title">Fachada del Palacio Municipal</p><p class="ph-size">📐 600 × 450 px</p><p class="ph-hint">Formato JPG · Foto exterior del Palacio Municipal</p></div>
+
+      <!-- Mapa placeholder -->
+      <div style="background:var(--blanco);border-radius:12px;box-shadow:var(--sombra);overflow:hidden">
+        <div style="background:var(--rojo-pri);color:#fff;padding:12px 16px;font-size:13px;font-weight:700"><i class="fas fa-map" style="margin-right:8px"></i>Ubicación en Google Maps</div>
+        <!-- MAPA: Sustituir con iframe de Google Maps del Palacio Municipal -->
+        <div class="img-placeholder" style="height:200px;border-radius:0;border:none;min-height:unset"><i class="fas fa-map-marked-alt" style="font-size:32px;color:#4CAF50"></i><p class="ph-title" style="font-size:13px">Mapa de Google Maps</p><p class="ph-size" style="font-size:12px">Insertar iframe de Google Maps aquí</p><p class="ph-hint" style="font-size:11px">Busca "Palacio Municipal Chontla Veracruz" en maps.google.com → Compartir → Insertar mapa</p></div>
+      </div>
+    </div>
+  </div>
+</div></main>
+<div id="site-footer"></div>
+<script>const BASE = '';</script><script src="js/components.js"></script><script src="js/main.js"></script>
+</body></html>

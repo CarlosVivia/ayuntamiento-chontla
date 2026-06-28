@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plan de Desarrollo Municipal | H. Ayuntamiento de Chontla</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+<div id="site-header"></div>
+<div class="page-hero-inner">
+  <div class="container">
+    <div class="page-breadcrumb"><a href="index.html"><i class="fas fa-home"></i></a><span class="sep">›</span><span>Plan de Desarrollo Municipal</span></div>
+    <h1><i class="fas fa-clipboard-list" style="margin-right:10px"></i>Plan de Desarrollo Municipal</h1>
+    <p>Administración 2022–2025 | Chontla, Veracruz</p>
+  </div>
+</div>
+<main class="section">
+  <div class="container">
+
+    <!-- Portada del PDM -->
+    <div style="display:grid;grid-template-columns:260px 1fr;gap:36px;align-items:start;margin-bottom:50px">
+      <!-- IMAGEN: Portada del Plan de Desarrollo -->
+      <div class="img-placeholder" style="height:340px">
+        <span class="ph-badge">Foto requerida</span>
+        <i class="fas fa-file-alt"></i>
+        <p class="ph-title">Portada del PDM</p>
+        <p class="ph-size">📐 600 × 780 px</p>
+        <p class="ph-hint">Formato JPG · Imagen vertical estilo portada de documento</p>
+      </div>
+      <div class="page-content">
+        <h2 style="margin-top:0">Plan de Desarrollo Municipal 2022–2025</h2>
+        <p>El Plan de Desarrollo Municipal (PDM) es el documento rector que establece los objetivos, estrategias y líneas de acción que guiarán la gestión del H. Ayuntamiento de Chontla durante la administración 2022–2025.</p>
+        <p>Fue elaborado con base en el diagnóstico de las necesidades ciudadanas, el marco legal vigente y los planes de desarrollo estatal y nacional, con el propósito de garantizar el bienestar integral de la población chontleca.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:20px">
+          <a href="#" class="btn-tramites" style="display:inline-flex"><i class="fas fa-download"></i> Descargar PDM (PDF)</a>
+          <a href="transparencia.html" class="btn-buscar" style="display:inline-flex"><i class="fas fa-eye"></i> Ver en Transparencia</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ejes estratégicos -->
+    <div class="section-header" style="text-align:left;margin-bottom:24px">
+      <span class="section-tag">Ejes</span>
+      <h2 style="font-size:22px;margin-top:8px">Ejes Estratégicos del PDM</h2>
+      <div class="divider-line" style="margin:12px 0 0"></div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:50px">
+      <?php $ejes=[['fas fa-building','Infraestructura y Obra Pública','Pavimentación, agua potable, electrificación y espacios públicos para mejorar la calidad de vida.','var(--rojo-pri)'],['fas fa-graduation-cap','Educación y Cultura','Becas, apoyos educativos y actividades culturales para fomentar el desarrollo social.','var(--verde-mexico)'],['fas fa-heartbeat','Salud y Bienestar','Jornadas médicas, vacunación y apoyo a grupos vulnerables.','#1565C0'],['fas fa-seedling','Medio Ambiente','Protección de recursos naturales, reforestación y manejo responsable de residuos.','#00695C'],['fas fa-shield-alt','Seguridad Pública','Fortalecimiento de la corporación policiaca y prevención del delito.','#E65100'],['fas fa-chart-line','Desarrollo Económico','Apoyo al campo, microempresas y promoción del turismo local.','#6A1B9A']]; foreach($ejes as $e): ?>
+      <div style="background:var(--blanco);border-radius:8px;box-shadow:var(--sombra);padding:24px;border-left:5px solid <?php echo $e[3]; ?>">
+        <div style="color:<?php echo $e[3]; ?>;font-size:26px;margin-bottom:12px"><i class="<?php echo $e[0]; ?>"></i></div>
+        <h3 style="font-size:15px;font-weight:700;margin-bottom:8px"><?php echo $e[1]; ?></h3>
+        <p style="font-size:13px;color:var(--gris-texto)"><?php echo $e[2]; ?></p>
+      </div>
+      <?php endforeach; ?>
+      <div style="background:var(--blanco);border-radius:8px;box-shadow:var(--sombra);padding:24px;border-left:5px solid var(--rojo-pri)"><div style="color:var(--rojo-pri);font-size:26px;margin-bottom:12px"><i class="fas fa-building"></i></div><h3 style="font-size:15px;font-weight:700;margin-bottom:8px">Infraestructura y Obra Pública</h3><p style="font-size:13px;color:var(--gris-texto)">Pavimentación, agua potable, electrificación y espacios públicos.</p></div>
+      <div style="background:var(--blanco);border-radius:8px;box-shadow:var(--sombra);padding:24px;border-left:5px solid var(--verde-mexico)"><div style="color:var(--verde-mexico);font-size:26px;margin-bottom:12px"><i class="fas fa-graduation-cap"></i></div><h3 style="font-size:15px;font-weight:700;margin-bottom:8px">Educación y Cultura</h3><p style="font-size:13px;color:var(--gris-texto)">Becas, apoyos educativos y actividades culturales.</p></div>
+      <div style="background:var(--blanco);border-radius:8px;box-shadow:var(--sombra);padding:24px;border-left:5px solid #1565C0"><div style="color:#1565C0;font-size:26px;margin-bottom:12px"><i class="fas fa-heartbeat"></i></div><h3 style="font-size:15px;font-weight:700;margin-bottom:8px">Salud y Bienestar</h3><p style="font-size:13px;color:var(--gris-texto)">Jornadas médicas, vacunación y apoyo a grupos vulnerables.</p></div>
+      <div style="background:var(--blanco);border-radius:8px;box-shadow:var(--sombra);padding:24px;border-left:5px solid #00695C"><div style="color:#00695C;font-size:26px;margin-bottom:12px"><i class="fas fa-seedling"></i></div><h3 style="font-size:15px;font-weight:700;margin-bottom:8px">Medio Ambiente</h3><p style="font-size:13px;color:var(--gris-texto)">Protección de recursos naturales y manejo de residuos.</p></div>
+      <div style="background:var(--blanco);border-radius:8px;box-shadow:var(--sombra);padding:24px;border-left:5px solid #E65100"><div style="color:#E65100;font-size:26px;margin-bottom:12px"><i class="fas fa-shield-alt"></i></div><h3 style="font-size:15px;font-weight:700;margin-bottom:8px">Seguridad Pública</h3><p style="font-size:13px;color:var(--gris-texto)">Fortalecimiento policiaco y prevención del delito.</p></div>
+      <div style="background:var(--blanco);border-radius:8px;box-shadow:var(--sombra);padding:24px;border-left:5px solid #6A1B9A"><div style="color:#6A1B9A;font-size:26px;margin-bottom:12px"><i class="fas fa-chart-line"></i></div><h3 style="font-size:15px;font-weight:700;margin-bottom:8px">Desarrollo Económico</h3><p style="font-size:13px;color:var(--gris-texto)">Apoyo al campo, microempresas y turismo local.</p></div>
+    </div>
+
+  </div>
+</main>
+<div id="site-footer"></div>
+<script>const BASE = '';</script>
+<script src="js/components.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

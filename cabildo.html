@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>H. Cabildo | H. Ayuntamiento de Chontla</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+<div id="site-header"></div>
+
+<div class="page-hero-inner">
+  <div class="container">
+    <div class="page-breadcrumb">
+      <a href="index.html"><i class="fas fa-home"></i></a><span class="sep">›</span>
+      <a href="#">Municipio</a><span class="sep">›</span><span>H. Cabildo</span>
+    </div>
+    <h1><i class="fas fa-users" style="margin-right:10px"></i>H. Cabildo Municipal</h1>
+    <p>Administración 2022 – 2025 | Chontla, Veracruz</p>
+  </div>
+</div>
+
+<main class="section">
+  <div class="container">
+
+    <!-- Presidente Municipal -->
+    <div class="section-header" style="text-align:left;margin-bottom:28px">
+      <span class="section-tag">Presidente Municipal</span>
+      <h2 style="font-size:22px;margin-top:8px">Titular del Ejecutivo Municipal</h2>
+      <div class="divider-line" style="margin:12px 0 0"></div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:280px 1fr;gap:36px;align-items:start;margin-bottom:50px">
+      <!-- IMAGEN: Foto del Presidente Municipal -->
+      <div class="img-placeholder" style="height:340px">
+        <span class="ph-badge">Foto requerida</span>
+        <i class="fas fa-user-tie"></i>
+        <p class="ph-title">Foto oficial del Presidente Municipal</p>
+        <p class="ph-size">📐 500 × 620 px</p>
+        <p class="ph-hint">Formato JPG · Retrato vertical · Fondo neutro</p>
+      </div>
+      <div class="page-content">
+        <h2 style="margin-top:0">Nombre del Presidente Municipal</h2>
+        <p style="color:var(--rojo-pri);font-weight:700;font-size:15px;margin-bottom:16px">
+          <i class="fas fa-star" style="margin-right:6px"></i>Presidente Municipal 2022 – 2025
+        </p>
+        <p>Breve semblanza biográfica del Presidente Municipal. Incluye su trayectoria, estudios académicos, experiencia en el servicio público y los principales compromisos adquiridos con la ciudadanía de Chontla durante la presente administración.</p>
+        <p>Puedes editar este texto directamente en el archivo <strong>cabildo.html</strong> para agregar la información oficial del titular.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:20px">
+          <span style="display:inline-flex;align-items:center;gap:6px;background:var(--gris-claro);padding:7px 14px;border-radius:20px;font-size:12.5px">
+            <i class="fas fa-envelope" style="color:var(--rojo-pri)"></i> presidencia@chontla.gob.mx
+          </span>
+          <span style="display:inline-flex;align-items:center;gap:6px;background:var(--gris-claro);padding:7px 14px;border-radius:20px;font-size:12.5px">
+            <i class="fas fa-phone" style="color:var(--rojo-pri)"></i> (789) 123-4567
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Síndica / Síndico -->
+    <div class="section-header" style="text-align:left;margin-bottom:28px">
+      <span class="section-tag">Síndico Municipal</span>
+      <h2 style="font-size:22px;margin-top:8px">Regidores y Síndico</h2>
+      <div class="divider-line" style="margin:12px 0 0"></div>
+    </div>
+
+    <div class="funcionario-grid" style="margin-bottom:50px">
+
+      <?php
+      $cargos = [
+        'Síndico Municipal',
+        'Regidor de Hacienda',
+        'Regidor de Obras Públicas',
+        'Regidora de Educación y Cultura',
+        'Regidor de Seguridad Pública',
+        'Regidora de Salud y Asistencia Social',
+        'Regidor de Ecología y Medio Ambiente',
+        'Regidora de Deporte y Juventud',
+      ];
+      ?>
+
+      <?php foreach($cargos as $cargo): ?>
+      <div class="funcionario-card">
+        <!-- IMAGEN: Foto del funcionario (350×350 px cuadrada) -->
+        <div class="funcionario-foto">
+          <div class="img-placeholder" style="height:180px;border-radius:0;min-height:unset;border:none">
+            <i class="fas fa-user" style="font-size:28px"></i>
+            <p class="ph-size" style="font-size:11px">📐 350 × 350 px</p>
+          </div>
+        </div>
+        <div class="funcionario-info">
+          <p class="cargo"><?php echo $cargo; ?></p>
+          <h3>Nombre del Funcionario</h3>
+          <p>Partido / Coalición</p>
+        </div>
+      </div>
+      <?php endforeach; ?>
+
+      <!-- Cargos hardcoded para HTML estático -->
+      <div class="funcionario-card"><div class="funcionario-foto"><div class="img-placeholder" style="height:180px;border-radius:0;min-height:unset;border:none"><i class="fas fa-user" style="font-size:28px"></i><p class="ph-size" style="font-size:11px">📐 350 × 350 px</p></div></div><div class="funcionario-info"><p class="cargo">Síndico Municipal</p><h3>Nombre del Funcionario</h3><p>Partido / Coalición</p></div></div>
+      <div class="funcionario-card"><div class="funcionario-foto"><div class="img-placeholder" style="height:180px;border-radius:0;min-height:unset;border:none"><i class="fas fa-user" style="font-size:28px"></i><p class="ph-size" style="font-size:11px">📐 350 × 350 px</p></div></div><div class="funcionario-info"><p class="cargo">Regidor de Hacienda</p><h3>Nombre del Funcionario</h3><p>Partido / Coalición</p></div></div>
+      <div class="funcionario-card"><div class="funcionario-foto"><div class="img-placeholder" style="height:180px;border-radius:0;min-height:unset;border:none"><i class="fas fa-user" style="font-size:28px"></i><p class="ph-size" style="font-size:11px">📐 350 × 350 px</p></div></div><div class="funcionario-info"><p class="cargo">Regidor de Obras Públicas</p><h3>Nombre del Funcionario</h3><p>Partido / Coalición</p></div></div>
+      <div class="funcionario-card"><div class="funcionario-foto"><div class="img-placeholder" style="height:180px;border-radius:0;min-height:unset;border:none"><i class="fas fa-user" style="font-size:28px"></i><p class="ph-size" style="font-size:11px">📐 350 × 350 px</p></div></div><div class="funcionario-info"><p class="cargo">Regidora de Educación</p><h3>Nombre del Funcionario</h3><p>Partido / Coalición</p></div></div>
+      <div class="funcionario-card"><div class="funcionario-foto"><div class="img-placeholder" style="height:180px;border-radius:0;min-height:unset;border:none"><i class="fas fa-user" style="font-size:28px"></i><p class="ph-size" style="font-size:11px">📐 350 × 350 px</p></div></div><div class="funcionario-info"><p class="cargo">Regidor de Seguridad</p><h3>Nombre del Funcionario</h3><p>Partido / Coalición</p></div></div>
+      <div class="funcionario-card"><div class="funcionario-foto"><div class="img-placeholder" style="height:180px;border-radius:0;min-height:unset;border:none"><i class="fas fa-user" style="font-size:28px"></i><p class="ph-size" style="font-size:11px">📐 350 × 350 px</p></div></div><div class="funcionario-info"><p class="cargo">Regidora de Salud</p><h3>Nombre del Funcionario</h3><p>Partido / Coalición</p></div></div>
+      <div class="funcionario-card"><div class="funcionario-foto"><div class="img-placeholder" style="height:180px;border-radius:0;min-height:unset;border:none"><i class="fas fa-user" style="font-size:28px"></i><p class="ph-size" style="font-size:11px">📐 350 × 350 px</p></div></div><div class="funcionario-info"><p class="cargo">Regidor de Ecología</p><h3>Nombre del Funcionario</h3><p>Partido / Coalición</p></div></div>
+      <div class="funcionario-card"><div class="funcionario-foto"><div class="img-placeholder" style="height:180px;border-radius:0;min-height:unset;border:none"><i class="fas fa-user" style="font-size:28px"></i><p class="ph-size" style="font-size:11px">📐 350 × 350 px</p></div></div><div class="funcionario-info"><p class="cargo">Regidora de Deporte</p><h3>Nombre del Funcionario</h3><p>Partido / Coalición</p></div></div>
+
+    </div>
+
+    <!-- Foto grupal del Cabildo -->
+    <div class="section-header" style="text-align:left;margin-bottom:20px">
+      <span class="section-tag">Foto Oficial</span>
+      <h2 style="font-size:22px;margin-top:8px">Foto de Toma de Protesta</h2>
+    </div>
+    <!-- IMAGEN: Foto grupal oficial del Cabildo -->
+    <div class="img-placeholder" style="height:380px">
+      <span class="ph-badge">Foto requerida</span>
+      <i class="fas fa-users"></i>
+      <p class="ph-title">Foto oficial grupal del H. Cabildo</p>
+      <p class="ph-size">📐 1920 × 800 px</p>
+      <p class="ph-hint">Formato JPG · Horizontal · Foto de toma de protesta o sesión de Cabildo</p>
+    </div>
+
+  </div>
+</main>
+
+<div id="site-footer"></div>
+<script>const BASE = '';</script>
+<script src="js/components.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
